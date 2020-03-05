@@ -4,11 +4,11 @@
     <%= f.text_field :username, required: true, autofocus: true, placeholder: "Username" %>
   </div>
   <div class="field">
-    <%= f.label :first_name%>
+    <%= f.label :first_name %>
     <%= f.text_field :first_name, required: true, placeholder: "First Name" %>
   </div>
   <div class="field">
-    <%= f.label :last_name%>
+    <%= f.label :last_name %>
     <%= f.text_field :last_name, required: true, placeholder: "Last Name" %>
   </div>
   <div class="field">
@@ -17,8 +17,10 @@
   </div><div class="field">
     <%= f.label :phone %>
     <%= f.text_field :phone, required: true, placeholder: "Phone" %>
-  </div><div class="field">
+  </div>
+  <div class="field">
     <%= f.label :email %>
     <%= f.text_field :email, required: true, placeholder: "Email" %>
   </div>
+    <button class="ui button" type="submit">Submit</button>    
 <% end %>

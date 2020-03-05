@@ -26,7 +26,7 @@ class PeopleController < ApplicationController
 
   def update
     if @person.update(person_params)
-      redirect_to people_path # puts 'update sucess'  - will this do anything?
+      redirect_to people_path 
     else 
       render :edit 
     end
@@ -44,6 +44,6 @@ class PeopleController < ApplicationController
   end
 
   def person_params
-    params.require(:person).permit(:user_name, :first_name, :last_name, :avatar, :phone, :email)
+    params.require(:person).permit(:username, :first_name, :last_name, :avatar, :phone, :email)
   end
 end
